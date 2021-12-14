@@ -33,7 +33,7 @@ The equations used were based on Equations 3,4,6, and 8 from the article (the eq
 - S0 = max(0, S - i_N * C_max * S/N * (mu * E + alpha*I) + A_S - L_S)  (from equation 3)
 - E0 = max(0, E + i_N* C_max * S/N * (mu * E + alpha*I) + A_E - E/tao_1 - L_E)  (from equation 4)
 - I0 = max(0, I + E/tao_1 - I0/tao_2 - L_I) (equation 6)
-- RO  = max(0, R + I0/tao_2 - L_R) (equation 8)
+- R0  = max(0, R + I0/tao_2 - L_R) (equation 8)
   
 
 
