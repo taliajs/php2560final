@@ -39,7 +39,7 @@ The equations used were based on Equations 3,4,6, and 8 from the article (the eq
 
 ## Shiny App 
 
-![Link to app](https://taliajs.shinyapps.io/seir_covid_model/)
+[Link to app](https://taliajs.shinyapps.io/seir_covid_model/)
 
 When the app is first run, it shows a single run of this model using default parameters. Users can look at the transmission of COVID-19 among students and faculty for different universities, by selecting an Ivy League school and changing the model parameters. When users select an Ivy League, the arrival rate is changed to that specific university. Users can learn more about the inputs by clicking on the `Information about Inputs` button on the App.
 
