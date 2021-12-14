@@ -16,7 +16,7 @@ Our project uses a SEIR-model framework to look at the transmission of COVID-19 
 
 
 ## Variables
-https://github.com/taliajs/php2560final/blob/main/parameter-table.PNG
+<img src="https://github.com/taliajs/php2560final/blob/main/parameter-table.PNG">
 
 ## Simulation 
 
