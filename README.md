@@ -23,10 +23,13 @@ Our project uses a SEIR-model framework to look at the transmission of COVID-19 
 
 ### Main Functions
 
-There is one main function for this simulation - `simfunc`. 
+- `simfunc`: Run simulation and create a record table that keeps the daily cases numbers. 
+- `func_getcum`: Take in the daily case table and create a cumulative case table.
+- `analysis_behaviour`: Analyze relationship between student sensitivity, university closure policy and COIVD cases. Generate a dataframe that records statistics (mean, maximum, and standard deviation) of daily cases under different policy and students' sensitivities
 
 
-### Equations
+
+### Simulation Equations
 
 The equations used were based on Equations 3,4,6, and 8 from the article (the equations are simplified), and represent the transmission dynamics
 - <img src="https://latex.codecogs.com/svg.image?\frac{dS}{dt}&space;=&space;-&space;i_N&space;C\frac{S}{N}(\mu&space;E&plus;\alpha&space;I)&plus;A_s&space;-&space;L_s" title="\frac{dS}{dt} = - i_N C\frac{S}{N}(\mu E+\alpha I)+A_s - L_s" />  (Equation 3)
