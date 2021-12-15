@@ -36,7 +36,7 @@ The equations used were based on Equations 3,4,6, and 8 from the article (the eq
 - <img src="https://latex.codecogs.com/svg.image?\frac{dI}{dt}&space;=&space;\frac{E}{\tau_1}-\frac{I}{\tau_2}-L_I" title="\frac{dI}{dt} = \frac{E}{\tau_1}-\frac{I}{\tau_2}-L_I" />  (Equation 6)
 
 - <img src="https://latex.codecogs.com/svg.image?\frac{dR}{dt}&space;=&space;\frac{I}{\tau_2}-L_R" title="\frac{dR}{dt} = \frac{I}{\tau_2}-L_R" />  (Equation 8)
-- dS/dt represents the rate of change in susceptible population. It is calculated as the incoming susceptible student population (A_s) minus the leaving susceptible students (L_x) minus the population that is already exposed to the disease (first component in the equation). mu* E + alpha* I is the effective population that could transmit the disease. The transmission rate is affected by the infection probability (i_N) and contact rate C.
+- dS/dt represents the rate of change in susceptible population. It is calculated as the incoming susceptible student population (A_s) minus the leaving susceptible students (L_x) minus the population that is already exposed to the disease (first component in the equation). mu*E + alpha* I is the effective population that could transmit the disease. The transmission rate is affected by the infection probability (i_N) and contact rate C.
   -  Contact Rate C is subject to change over time. It is related to students' sensitivity to the disease and rolling average of COVID cases. Defined as:
       - <img src="https://latex.codecogs.com/svg.image?C=C_{max}W_N" title="C=C_{max}W_N" />
       -    <img src="https://latex.codecogs.com/svg.image?W_N&space;=&space;exp(-h(\frac{Rolling&space;Avg}{N}))" title="W_N = exp(-h(\frac{Rolling Avg}{N}))" /> (Equation 17)   
