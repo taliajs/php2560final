@@ -44,7 +44,21 @@ The equations used were based on Equations 3,4,6, and 8 from the article (the eq
 - dI/dt represents the rate of change in infected population. It is calculated as incoming infected population minus the leaving infected students (L_I) and recovered population (I/tau_2)
 - dR/dt represents the rate of change in recovered population. It is the newly recovered population (I/tau_2) minus the leaving recovered students (L_R)
 
-  
+### Parameter Descriptions
+- **Arrival rate of students:** 
+  - Changes initial population of susceptible. When users select an Ivy League from the drop-down, the arrival rate is changed to that specific university
+
+- **Constant contact rate:** 
+  - The maximum contact rate (person/day) possible. 
+
+- **infection probability:**
+  - Affect rate of transmission/infection
+
+- **Student Sensitivity to COVID:**
+  - Students' sensitivity to the disease and rolling average of COVID cases. It affects the Contact Rate, which is subject to change over time. 
+
+- **University Closure Decision:**
+  - 1: University starts to evacuate students. 0: University operates as normal. It affects the leaving rate of students. e.g. When set to 1, students leave campus at certain rate.
 
 
 ## Shiny App 
