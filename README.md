@@ -51,7 +51,7 @@ The equations used were based on Equations 3,4,6, and 8 from the article (the eq
 - **Constant contact rate:** 
   - The maximum contact rate (person/day) possible. 
 
-- **infection probability:**
+- **Infection probability:**
   - Affect rate of transmission/infection
 
 - **Student Sensitivity to COVID:**
