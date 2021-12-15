@@ -29,7 +29,10 @@ There is one main function for this simulation - `simfunc`.
 ### Equations
 
 The equations used were based on Equations 3,4,6, and 8 from the article (the equations are simplified), and represent the transmission dynamics
-
+- <img src="https://latex.codecogs.com/svg.image?\frac{dS}{dt}&space;=&space;-&space;iC\frac{S}{N}(\mu&space;E&plus;\alpha&space;I)&plus;A_s&space;-&space;L_s" title="\frac{dS}{dt} = - iC\frac{S}{N}(\mu E+\alpha I)+A_s - L_s" /> 
+- <img src="https://latex.codecogs.com/svg.image?\frac{dE}{dt}&space;=&space;iC\frac{S}{N}(\mu&space;E&plus;\alpha&space;I)&space;-&space;\frac{E}{\tau_1}&space;&plus;A_E&space;-&space;L_E" title="\frac{dE}{dt} = iC\frac{S}{N}(\mu E+\alpha I) - \frac{E}{\tau_1} +A_E - L_E" />
+- <img src="https://latex.codecogs.com/svg.image?\frac{dI}{dt}&space;=&space;\frac{E}{\tau_1}-\frac{I}{\tau_2}-L_I" title="\frac{dI}{dt} = \frac{E}{\tau_1}-\frac{I}{\tau_2}-L_I" />
+- <img src="https://latex.codecogs.com/svg.image?\frac{dR}{dt}&space;=&space;\frac{I}{\tau_2}-L_R" title="\frac{dR}{dt} = \frac{I}{\tau_2}-L_R" />
 - S0 = max(0, S - i_N * C_max * S/N * (mu * E + alpha*I) + A_S - L_S)  (from equation 3)
 - E0 = max(0, E + i_N* C_max * S/N * (mu * E + alpha*I) + A_E - E/tao_1 - L_E)  (from equation 4)
 - I0 = max(0, I + E/tao_1 - I0/tao_2 - L_I) (equation 6)
