@@ -26,6 +26,7 @@ Our project uses a SEIR-model framework to look at the transmission of COVID-19 
 - `simfunc`: Run simulation and create a record table that keeps the daily cases numbers. 
 - `func_getcum`: Take in the daily case table and create a cumulative case table.
 - `analysis_behaviour`: Analyze relationship between student sensitivity, university closure policy and COIVD cases. Generate a dataframe that records statistics (mean, maximum, and standard deviation) of daily cases under different policy and students' sensitivities
+- Detailed documentations are in docstring of the functions.
 
 
 
@@ -43,6 +44,7 @@ The equations used were based on Equations 3,4,6, and 8 from the article (the eq
   -  Contact Rate C is subject to change over time. It is related to students' sensitivity to the disease and rolling average of COVID cases. Defined as:
       - <img src="https://latex.codecogs.com/svg.image?C=C_{max}W_N" title="C=C_{max}W_N" />
       -    <img src="https://latex.codecogs.com/svg.image?W_N&space;=&space;exp(-h(\frac{Rolling&space;Avg}{N}))" title="W_N = exp(-h(\frac{Rolling Avg}{N}))" /> (Equation 17)   
+  - L_x is the leaving rate of students with status x. When university closure = 0, all leaving rate is equal to zero. When university closure = 1, L_x = X/(Average time to leave the university), where x could be S, E, I, or R.
 - dE/dt represents the rate of change in exposed population. It takes in the exposed population and arrival exposed students (A_E) and subtracts the leaving exposed students (L_E) and population that is already infected (E/tau_1)
 - dI/dt represents the rate of change in infected population. It is calculated as incoming infected population minus the leaving infected students (L_I) and recovered population (I/tau_2)
 - dR/dt represents the rate of change in recovered population. It is the newly recovered population (I/tau_2) minus the leaving recovered students (L_R)
@@ -79,6 +81,10 @@ When the app is first run, it shows a single run of this model using default par
 The tab `Daily cases` shows the daily cases of COVID-19 for exposed and infected individuals, with min, max and average contact rate listed below. 
 
 The tab `Cumulative cases` shows the cumulative cases of COVID-19 over time. 
+
+The tab `SEIR Curve` shows the daily number of all S,E,I,R status. 
+
+The tab `Behaviour and Policy Analysis` shows how daily cases would change according to different behaviour and policy. Users can choose from the bottom to show either Daily Average or Daily Maximum. The graphs show that students' sensitivity to COVID and university closure decision have a large impact on daily cases.
 
 The `Summary` table shows the statistics for contact rate for specific variables.
 
